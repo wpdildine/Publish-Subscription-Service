@@ -1,0 +1,20 @@
+<HTML>
+<head>
+    <title>EXAMPLE API</title>
+</head>
+<body>
+
+<script src="events.js" type="text/javascript"></script>
+<script>
+
+    var object = {};
+    var Subscriber = new Subscription.Events();
+    Subscriber.on("alert", function (msg) {
+        alert("Triggered " + msg);
+    });
+    Subscriber.trigger("alert", "an event");
+
+</script>
+</body>
+</HTML>
+<html>
